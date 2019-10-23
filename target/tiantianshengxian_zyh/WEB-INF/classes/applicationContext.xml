@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop
+                           http://www.springframework.org/schema/aop/spring-aop.xsd
+                           http://www.springframework.org/schema/tx
+                           http://www.springframework.org/schema/tx/spring-tx.xsd
+                           http://www.springframework.org/schema/context
+                           http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--  Spring配置文件  -->
+
+    <!-- =================== 一：导入外部参数文件  ====================== -->
+    <context:property-placeholder location="classpath:jdbc.properties"/>
+
+
+    <!--  ===============  二：连接池：druid  =============================  -->
+    <bean id="druid" class="com.alibaba.druid.pool.DruidDataSource" init-method="init"
+          destroy-method="close">
+        <!-- 基本属性 url、user、password -->
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.user}"/>
+        <property name="password" value="${jdbc.password}"/>
+
+        <!-- 配置初始化大小、最小、最大 -->
+        <property name="initialSize" value="1"/>
+        <property name="minIdle" value="1"/>
+        <property name="maxActive" value="${jdbc.maxPoolSize}"/>
+
+        <!-- 配置获取连接等待超时的时间 -->
+        <property name="maxWait" value="3000"/>
+
+        <!-- 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒 -->
+        <property name="timeBetweenEvictionRunsMillis" value="60000"/>
+
+        <!-- 配置一个连接在池中最小空闲的时间，单位是毫秒 -->
+        <property name="minEvictableIdleTimeMillis" value="300000"/>
+
+        <property name="validationQuery" value="SELECT 'x'"/>
+        <property name="testWhileIdle" value="true"/>
+        <property name="testOnBorrow" value="false"/>
+        <property name="testOnReturn" value="false"/>
+    </bean>
+
+
+    <!-- ==================== 三： SqlSessionFactory  ===============================  -->
+    <!--
+         配置: 1.连接池
+              2.mapper文件信息
+              3.别名-可选
+              4.插件-可选
+     -->
+    <bean id="sqlSessionFactory04" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!-- 注入连接池 -->
+        <property name="dataSource" ref="druid"/>
+
+        <!-- mapper文件 如果和dao接口在同包且同名，则如下注入可以省略 -->
+        <property name="mapperLocations" value="classpath:per/zyh/DAO/*.xml"/>
+
+        <!-- 为 dao-mapper文件中的实体 定义缺省包路径 ，
+            即，别名 xxxDao.xml中的xxxType中不用再写实体类的全路径名了
+        如：<select id="queryAll" resultType="User"> 中 User类可以不定义包的路径 -->
+        <property name="typeAliasesPackage" value="per.zyh.pojo"/>
+
+        <!-- 插件 -->
+        <property name="plugins">
+            <list>
+                <!-- 分页插件： -->
+                <bean class="com.github.pagehelper.PageInterceptor">
+                    <property name="properties">
+                        <value>
+                            reasonable=true
+                        </value>
+                    </property>
+                </bean>
+            </list>
+        </property>
+
+        <!-- 驼峰命名法自动转换 (数据库下划线字段名自动转为Java属性的驼峰命名)-->
+        <property name="configuration">
+            <bean class="org.apache.ibatis.session.Configuration">
+                <property name="mapUnderscoreToCamelCase" value="true"/>
+            </bean>
+        </property>
+
+    </bean>
+
+
+    <!-- ==================== 四： Mapper扫描  ============================================  -->
+    <!-- 扫描所有mapper，为每个dao定制实现类   sqlSession.getMapper(UserDAO.class)
+         DAO实现的对象会 纳入工厂，并且beanID=DAO的首字母小写接口类名=“userDAO”
+         1> DAO接口
+         2> DAO映射文件
+         3> SqlSession
+    -->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!-- DAO接口、映射文件位置 -->
+        <property name="basePackage" value="per.zyh.DAO"/>
+
+        <!-- 如果当前工厂中 只有一个SqlSessionFactory,则此项注入可以省略 -->
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory04"/>
+        <!--    此项注入的另外一种写法：
+        <property name="sqlSessionFactory" ref="sqlSessionFactory04"/>               -->
+    </bean>
+
+
+    <!-- ==================== 五：事务管理  ===============================================  -->
+    <!-- 事务管理器 -->
+    <bean id="tx" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="druid"/>
+    </bean>
+    <!-- 支持 @Transactional 实现事务  (告知Spring，事务管理器的位置) -->
+    <tx:annotation-driven transaction-manager="tx"/>
+
+
+    <!-- ==================== 六：注解扫描  ===============================================  -->
+    <!--原理：类上边加上注解，该 注解扫描组件 扫描到类上边的注解之后，会自动在该工厂中创建出这个类 相应的组件 -->
+    <!-- 配置注解扫描：让spring去发现注解，进而实现对应的功能 -->
+    <context:component-scan base-package="per.zyh">
+        <!-- 排除扫描Controller注解：  -->
+        <context:exclude-filter type="annotation"
+                                expression="org.springframework.stereotype.Controller"></context:exclude-filter>
+    </context:component-scan>
+    <!--  AOP注解的“开关”，即，开启AOP注解。-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+
+    <!-- ==================== 七：导入 外部配置文件  ===============================================  -->
+    <!--  导入外部的shiro配置文件(该配置文件也是属于Spring配置文件的一种)  -->
+    <!--    <import resource="classpath:shiro_applicationContext.xml"/>-->
+<!--
+    &lt;!&ndash; 导入reids相关的配置文件 &ndash;&gt;
+    <import resource="classpath:application_redis.xml"/>
+-->
+    <!-- 导入shiro相关的配置文件 -->
+    <import resource="classpath:applicationContext_shiro.xml"/>
+
+</beans>

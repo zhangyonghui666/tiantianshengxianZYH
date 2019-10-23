@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>per.zyh</groupId>
+  <artifactId>tiantianshengxian_zyh</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>tiantianshengxian_zyh Maven Webapp</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+<!--  
+	shiro  mysql  mybatis  log4j  junit  servlet-api  servlet.jsp-api  jstl
+	druid  fastjson  commons-beanutils  commons-fileupload 
+	 mail  validatecode  slf4j  pagehelper  spring-context-support
+	 lombok  spring-aspects  spring-webmvc spring-jdbc  spring-web
+	 mybatis-spring  验证码  commons-fileupload  commons-io
+	  java_Redis
+-->  
+  <dependencies>
+
+  <!-- ************************ java_Redis *****************************************************  -->
+      <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+      <dependency>
+          <groupId>redis.clients</groupId>
+          <artifactId>jedis</artifactId>
+          <version>2.9.0</version>
+      </dependency>
+	  <!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis 
+     需要spring-4.3.10版本
+-->
+<dependency>
+    <groupId>org.springframework.data</groupId>
+    <artifactId>spring-data-redis</artifactId>
+    <version>1.8.6.RELEASE</version>
+</dependency>
+
+
+
+<!-- ************************ spring-test *****************************************************  -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>4.3.10.RELEASE</version>
+</dependency>
+
+
+
+  <!-- ******************* shiro ****************************************  -->
+<!-- shiro-spring 用于在工厂中生产 ShiroFilter
+							  	   会传递导入shiro-core 和 shiro-web -->
+      <dependency>
+          <groupId>org.apache.shiro</groupId>
+          <artifactId>shiro-spring</artifactId>
+          <version>1.4.0</version>
+      </dependency>
+
+
+ <!-- ******************* Spring、SpringMVC ****************************************  -->
+       <!-- spring-jdbc(会传递tx) ，context-support ,aspects-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.6.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>4.3.6.RELEASE</version>
+    </dependency>
+	 <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context-support</artifactId>
+      <version>4.3.6.RELEASE</version>
+    </dependency>
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-aspects</artifactId>
+    <version>4.3.6.RELEASE</version>
+</dependency>
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>4.3.6.RELEASE</version>
+</dependency>
+
+
+
+ <!-- ******************* Spring+MyBatis ****************************************  -->
+    <!-- spring+mybatis集成依赖 -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+
+
+ <!-- ******************* Mysql、MyBatis ****************************************  -->
+    <dependency>
+				 <groupId>mysql</groupId>
+				 <artifactId>mysql-connector-java</artifactId>
+				  <version>5.1.45</version>
+	</dependency>
+	<dependency>
+				    <groupId>org.mybatis</groupId>
+ 				  <artifactId>mybatis</artifactId>
+				  <version>3.4.6</version>
+	</dependency>
+
+
+<!-- ******************* 日志组 ****************************************  -->
+  <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+	 <dependency>
+				  <groupId>log4j</groupId>
+				  <artifactId>log4j</artifactId>
+				  <version>1.2.17</version>
+	 </dependency>
+ <!-- commons-logging -->
+<dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+        </dependency>
+		<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.12</version>
+</dependency>
+<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-log4j12</artifactId>
+    <version>1.7.12</version>
+</dependency>
+
+
+<!-- ******************* junit测试 ****************************************  -->
+		<dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+
+<!-- ******************* Servlet ****************************************  -->
+ <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp</groupId>
+      <artifactId>javax.servlet.jsp-api</artifactId>
+      <version>2.3.1</version>
+    </dependency>
+<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+ </dependency>
+
+
+ <!-- ******************* 连接池组 ****************************************  -->
+ <dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>druid</artifactId>
+    <version>1.1.5</version>
+</dependency>
+
+
+<!-- ******************* json处理 ****************************************  -->
+<!--fastjson-->
+<dependency>
+    <groupId>com.alibaba</groupId>
+    <artifactId>fastjson</artifactId>
+    <version>1.2.47</version>
+</dependency>
+<!--jackson-->
+<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.9.8</version>
+</dependency>
+
+
+<!-- ******************* BeanUtils工具类（简化javabean的操作）**********  -->
+<dependency>
+    <groupId>commons-beanutils</groupId>
+    <artifactId>commons-beanutils</artifactId>
+    <version>1.9.3</version>
+</dependency>
+
+
+<!-- ******************* mail ************************************  -->
+<dependency>
+    <groupId>com.sun.mail</groupId>
+    <artifactId>javax.mail</artifactId>
+    <version>1.5.6</version>
+</dependency>
+
+
+<!-- ******************* 验证码组 ************************************  -->
+<dependency>
+    <groupId>com.qf</groupId>
+    <artifactId>validatecode</artifactId>
+    <version>1.0.0</version>
+</dependency>
+    <!-- Kaptcha 验证码-->
+    <dependency>
+      <groupId>com.github.penggle</groupId>
+      <artifactId>kaptcha</artifactId>
+      <version>2.3.2</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>javax.servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+</dependency>
+
+
+<!-- ******************* 分页pagehelper  ************************************  -->
+<dependency>
+    <groupId>com.github.pagehelper</groupId>
+    <artifactId>pagehelper</artifactId>
+    <version>RELEASE</version>
+</dependency>
+
+
+<!-- ******************* lombok  ************************************  -->
+	<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.4</version>
+		<scope>provided</scope>
+</dependency>
+
+
+
+<!-- ******************* 上传  ************************************  -->
+    <dependency>
+      <groupId>commons-io</groupId>
+      <artifactId>commons-io</artifactId>
+      <version>2.4</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.3.3</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.servlet</groupId>
+          <artifactId>servlet-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+
+  </dependencies>
+
+  <build>
+    <finalName>tiantianshengxian_zyh</finalName>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+<!-- ********   把java目录、resource目录中的配置文件也包含在项目的类路径中  **********  -->
+		<resources>
+
+          <resource>
+              <directory>src/main/java</directory>
+              <includes>
+                  <include>**/*.xml</include>
+              </includes>
+			   <!-- 是否替换资源中的属性-->
+              <filtering>false</filtering>
+          </resource>
+
+          <resource>
+              <directory>src/main/resources</directory>
+              <includes>
+                  <include>**/*.xml</include>
+                  <include>**/*.properties</include>
+                  <include>**/*.ini</include>
+              </includes>
+              <filtering>false</filtering>
+          </resource>
+
+      </resources>
+
+  </build>
+</project>

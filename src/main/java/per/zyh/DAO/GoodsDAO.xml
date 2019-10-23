@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- xxxDao.xml  -->
+<mapper namespace="per.zyh.DAO.GoodsDAO">
+
+
+<!-- 按照创建时间，查询前4条数据（注意limit的用法和order by 的顺序） -->
+    <select id="queryAllGoodsByTypeId" resultType="per.zyh.pojo.Goods">
+        SELECT * FROM t_goods where typeId=#{typeId} ORDER BY createTime LIMIT 4
+    </select>
+    <select id="queryGoodsTitleByTypeId" resultType="java.lang.String">
+        SELECT title FROM t_goodstype where id=#{typeId}
+    </select>
+</mapper>

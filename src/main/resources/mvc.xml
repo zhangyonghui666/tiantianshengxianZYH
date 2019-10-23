@@ -1,0 +1,79 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+							http://www.springframework.org/schema/beans/spring-beans.xsd
+							http://www.springframework.org/schema/context
+							http://www.springframework.org/schema/context/spring-context.xsd
+							http://www.springframework.org/schema/mvc
+							http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+    <!-- =======================  SpringMVC注解扫描  ============================================================= -->
+    <!-- 告知springmvc  哪些包中 存在 被注解的类 -->
+    <context:component-scan base-package="per.zyh">
+        <!-- 只扫描  有@Controller注解的类 -->
+        <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+
+    <!-- =======================  SpringMVC注解驱动  ============================================================= -->
+    <!-- 注册注解开发驱动 -->
+    <mvc:annotation-driven>
+        <!-- 安装FastJson   -->
+        <mvc:message-converters>
+            <bean class="com.alibaba.fastjson.support.spring.FastJsonHttpMessageConverter">
+                <!-- 声明转换类型:json -->
+                <property name="supportedMediaTypes">
+                    <list>
+                        <value>application/json</value>
+                    </list>
+                </property>
+            </bean>
+        </mvc:message-converters>
+    </mvc:annotation-driven>
+
+
+    <!-- =======================  视图解析器  ============================================================= -->
+    <!-- 视图解析器
+	     作用：1.捕获后端控制器的返回值="index"
+	          2.解析： 在返回值的前后 拼接 ==> "/index.jsp"
+	 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!-- 前缀 -->
+        <property name="prefix" value="/WEB-INF/"></property>
+        <!-- 后缀 -->
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+
+    <!-- =======================  访问静态资源 ============================================================= -->
+    <!--  用来访问静态资源： -->
+    <mvc:default-servlet-handler/>
+
+
+    <!-- =======================  异常解析器 ============================================================= -->
+    <!-- 异常解析器 -->
+    <bean class="per.zyh.resolver.MyExceptionResolver"></bean>
+
+
+    <!-- ========================= Shiro ===========================================================  -->
+    <!-- 组件1，该组件的作用是：调用工厂中 Initializable类型 的组件的init方法
+                  （说白了，就是帮你完成（Initializable这种类型的）组件的初始化）（不必过多关注）  -->
+    <bean id="lifecycleBeanPostProcessor"
+          class="org.apache.shiro.spring.LifecycleBeanPostProcessor"/>
+
+    <!-- 组件2，aop组件：
+    声明该组件的作用是：在SpringMVC工厂启动以后，如果发现了此组件，会在当前的工厂中，多创建一个Bean组件（即，后处理器），用来定制代理 -->
+    <aop:config></aop:config>
+
+    <!-- 组件3:额外功能组件：
+        这个组件的作用：提供了充足的额外功能，并且将其初始化，以使这些额外功能都能识别出它们各自对应的注解。  -->
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <!-- 注入老大：-->
+        <property name="securityManager" ref="securityManager"/>
+    </bean>
+
+
+</beans>

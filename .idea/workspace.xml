@@ -1,0 +1,1501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="天天生鲜_zyh:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c07718d8-1772-4844-9613-0cdb891a06d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/DAO/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/constant/MyConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Goods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/GoodsType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/pojo/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/realm/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/resolver/MyExceptionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/resolver/R.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/PermissionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/per/zyh/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/applicationContext_shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/Goods.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/GoodsType.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/meet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/place_order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/user_center_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/user_center_order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/user_center_site.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/adv01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/adv02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/banner06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/fruit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods/goods021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/goods_detail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/icons02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/interval_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/left_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/login_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/logo02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/pay_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/register_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/shop_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slide02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slide03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/images/slide04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/js/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/per/zyh/TestDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/天天生鲜_zyh.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/applicationContext_shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/GoodsDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/GoodsDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/GoodsTypeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/GoodsTypeDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/PermissionDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/PermissionDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/RoleDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/RoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/DAO/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/constant/MyConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/GoodsType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/realm/MyRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/resolver/MyExceptionResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/resolver/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/GoodsTypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/GoodsTypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/per/zyh/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/per/zyh/TestDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/Goods.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/GoodsType.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/META-INF/天天生鲜_zyh.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/applicationContext_shiro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/jdbc.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/GoodsDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/GoodsDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/GoodsTypeDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/GoodsTypeDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/PermissionDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/PermissionDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/RoleDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/RoleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/UserDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/DAO/UserDAO.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/constant/MyConstant.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/controller/GoodsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/controller/UserController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/Goods.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/GoodsType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/Permission.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/Status.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/pojo/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/realm/MyRealm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/resolver/MyExceptionResolver.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/resolver/R.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/GoodsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/GoodsServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/GoodsTypeService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/GoodsTypeServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/PermissionService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/PermissionServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/RoleService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/RoleServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/classes/per/zyh/service/UserServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/activation-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-beanutils-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-collections-3.2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-fileupload-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-io-2.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/commons-pool2-2.4.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/druid-1.1.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/fastjson-1.2.47.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/filters-2.0.235-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jackson-annotations-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jackson-core-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jackson-databind-2.9.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/javax.mail-1.5.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/javax.servlet-api-3.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/javax.servlet.jsp-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jcl-over-slf4j-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jedis-2.9.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jsqlparser-2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/kaptcha-2.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/log4j-1.2.17.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/mybatis-3.4.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/mybatis-spring-1.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/mysql-connector-java-5.1.45.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/pagehelper-5.1.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-cache-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-config-core-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-config-ogdl-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-core-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-crypto-cipher-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-crypto-core-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-crypto-hash-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-event-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-lang-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-spring-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/shiro-web-1.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/slf4j-api-1.7.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/slf4j-log4j12-1.7.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-aop-4.3.10.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-aspects-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-context-support-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-core-4.3.10.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-data-commons-1.13.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-data-keyvalue-1.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-data-redis-1.8.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-jdbc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-oxm-4.3.10.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-test-4.3.10.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-tx-4.3.10.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/lib/validatecode-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/meet.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/place_order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/user_center_info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/user_center_order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/user_center_site.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/adv01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/adv02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/banner06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/down.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/fruit.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods001.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods002.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods004.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods005.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods006.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods007.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods008.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods009.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods010.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods012.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods013.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods014.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods015.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods016.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods017.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods018.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods019.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods020.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods/goods021.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/goods_detail.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/icons02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/interval_line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/left_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/login_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/logo02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/pay_icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/register_banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/shop_cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/slide.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/slide02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/slide03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/images/slide04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/js/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/js/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/js/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/tiantianshengxian_zyh/js/slide.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/天天生鲜_zyh.iml" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/controller/GoodsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-30">
+              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-373">
+              <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+              <folding>
+                <element signature="e#2669#2670#0" expanded="true" />
+                <element signature="e#2699#2700#0" expanded="true" />
+                <element signature="e#2768#2769#0" expanded="true" />
+                <element signature="e#2821#2822#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jdbc" />
+        <option value="Spring" />
+        <option value="mvc" />
+        <option value="shiro_Spring" />
+        <option value="MyExceptionResolver" />
+        <option value="MyConstant" />
+        <option value="xxxDao" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reg_form</find>
+      <find>sen</find>
+      <find>send</find>
+      <find>sendUsername</find>
+      <find>clearfix</find>
+      <find>tip</find>
+      <find>验证码</find>
+      <find>欢迎</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/Dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/Dao/UserDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mvc.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/PermissionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/UserDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/applicationContext_shiro.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Status.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/ValiDateCode.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/resolver/MyExceptionResolver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/resolver/R.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/realm/MyRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/GoodsType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/controller/GoodsTypeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/FruitDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/GooodsType.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/GoodsType.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Fruit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/FruitService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/FruitServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Fruit.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/FruitDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/meet.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/pojo/Goods.java" />
+        <option value="$PROJECT_DIR$/src/test/per/zyh/TestDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/Goods.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/per/zyh/controller/UserController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\maven_localhome_path\repositories\Maven" />
+        <option name="mavenHome" value="D:/apache-maven-3.5.0/apache-maven-3.5.0" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.5.0\apache-maven-3.5.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="downloadDocsAutomatically" value="true" />
+        <option name="downloadSourcesAutomatically" value="true" />
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="951" />
+    <option name="width" value="978" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="DAO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="realm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="resolver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="天天生鲜_zyh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="天天生鲜_zyh" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="per" type="462c0819:PsiDirectoryNode" />
+              <item name="zyh" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaWebProjects\天天生鲜_zyh\src\main\webapp\WEB-INF" />
+      <recent name="D:\JavaWebProjects\天天生鲜_zyh\src\main\java\per\zyh\resolver" />
+      <recent name="D:\JavaWebProjects\天天生鲜_zyh\src\main\webapp\js" />
+      <recent name="D:\JavaWebProjects\天天生鲜_zyh\src\main\java\per\zyh\service" />
+      <recent name="D:\JavaWebProjects\天天生鲜_zyh\src\main\java\per\zyh\DAO" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat8.5">
+    <configuration name="TestDAO.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="天天生鲜_zyh" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="per.zyh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="per.zyh" />
+      <option name="MAIN_CLASS_NAME" value="per.zyh.TestDAO" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat8.5" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.451" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="redeploy-artifacts" />
+      <deployment>
+        <artifact name="天天生鲜_zyh:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/_zyh_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_天天生鲜_zyh" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="天天生鲜_zyh:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/_zyh_war_exploded/" />
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="天天生鲜_zyh:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/_zyh_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_天天生鲜_zyh" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="javadebug" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="天天生鲜_zyh:war exploded" />
+          <artifact name="天天生鲜_zyh:war" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.TestDAO.test" />
+      <item itemvalue="Tomcat Server.Tomcat8.5" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestDAO.test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c07718d8-1772-4844-9613-0cdb891a06d6" name="Default Changelist" comment="" />
+      <created>1571646327733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571646327733</updated>
+      <workItem from="1571646330562" duration="24511000" />
+      <workItem from="1571700170601" duration="46508000" />
+      <workItem from="1571788163092" duration="14116000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 24m 44s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 25m 59s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 27m 25s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 29m 03s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 29m 15s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.21 at 17h 36m 36s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.22 at 23h 07m 44s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.23 at 08h 04m 53s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.23 at 08h 15m 08s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestDAO_test - 2019.10.23 at 08h 35m 46s.xml">
+      <configuration name="TestDAO.test" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="85135000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16957104" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24447717" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.54558825" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.5132353" />
+      <window_info anchor="bottom" id="Tail" order="16" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Word Book" order="2" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17895442" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6279412" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.54558825" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.32941177" />
+      <window_info anchor="bottom" id="Spring" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" />
+      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Messages" order="15" weight="0.32941177" />
+      <window_info anchor="bottom" id="Tail" order="16" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Palette" order="1" />
+      <window_info anchor="right" id="Word Book" order="2" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Key Promoter X" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="8" weight="0.3297587" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/RoleServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/PermissionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/PermissionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/UserDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="106" selection-start-line="10" selection-start-column="106" selection-end-line="10" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/constant/MyConstant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="140" column="40" lean-forward="true" selection-start-line="140" selection-start-column="40" selection-end-line="140" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/pojo/Status.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/pojo/ValiDateCode.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="226" column="28" lean-forward="true" selection-start-line="226" selection-start-column="28" selection-end-line="226" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="336" column="19" selection-start-line="336" selection-start-column="19" selection-end-line="336" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="102" column="37" lean-forward="true" selection-start-line="102" selection-start-column="37" selection-end-line="102" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="111" column="25" selection-start-line="111" selection-start-column="18" selection-end-line="111" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/resolver/MyExceptionResolver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96">
+          <caret line="20" column="33" lean-forward="true" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/resolver/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext_shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1053">
+          <caret line="75" column="26" selection-start-line="75" selection-start-column="26" selection-end-line="75" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/realm/MyRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="54" column="35" lean-forward="true" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="103" column="29" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#input#0;n#div#2;n#form#0;n#div#1;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="949">
+          <caret line="112" column="54" lean-forward="true" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="69" column="43" selection-start-line="69" selection-start-column="43" selection-end-line="69" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/PermissionDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="8" column="23" lean-forward="true" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/GoodsType.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/meet.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/pojo/GoodsType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/pojo/Goods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="22" column="20" lean-forward="true" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/per/zyh/TestDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/Goods.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="30" column="90" lean-forward="true" selection-start-line="30" selection-start-column="90" selection-end-line="30" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsTypeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/DAO/GoodsTypeDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-373">
+          <caret line="77" column="26" selection-start-line="77" selection-start-column="26" selection-end-line="77" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/per/zyh/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#2821#2822#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring|天天生鲜_zyh</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11 (2)</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
