@@ -34,4 +34,10 @@ public class GoodsServiceImpl implements GoodsService {
         return goodsTypeDAO.queryGoodsBannerImgByTypeId(typeId);
     }
 
+    @Override
+    public Goods queryGoodsById(Integer id) {
+        Goods singleGood=goodsDAO.queryGoodsById(id);
+        return singleGood;
+    }
+
 }

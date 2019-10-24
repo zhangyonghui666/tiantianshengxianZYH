@@ -10,4 +10,6 @@ public interface UserDAO {
     Integer insertUser(User user);
 
     User queryUserByName(@Param("username") String username);
+
+    User queryUserByEmail(@Param("email") String email);
 }

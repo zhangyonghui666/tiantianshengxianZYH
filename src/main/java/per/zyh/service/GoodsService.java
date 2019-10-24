@@ -11,4 +11,6 @@ public interface GoodsService {
     List<Goods> queryAllGoodsByTypeId(Integer typeId);
 
     String queryGoodsBannerImgByTypeId(Integer typeId);
+
+    Goods queryGoodsById(Integer id);
 }

@@ -9,9 +9,12 @@
 
 <!-- 按照创建时间，查询前4条数据（注意limit的用法和order by 的顺序） -->
     <select id="queryAllGoodsByTypeId" resultType="per.zyh.pojo.Goods">
-        SELECT * FROM t_goods where typeId=#{typeId} ORDER BY createTime LIMIT 4
+        SELECT * FROM t_goods where typeId=#{typeId}
     </select>
     <select id="queryGoodsTitleByTypeId" resultType="java.lang.String">
         SELECT title FROM t_goodstype where id=#{typeId}
+    </select>
+    <select id="queryGoodsById" resultType="per.zyh.pojo.Goods">
+        SELECT * FROM t_goods where id=#{id}
     </select>
 </mapper>

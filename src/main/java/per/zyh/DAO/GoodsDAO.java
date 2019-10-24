@@ -12,4 +12,6 @@ public interface GoodsDAO {
 
 
     String queryGoodsTitleByTypeId(Integer typeId);
+
+    Goods queryGoodsById(Integer id);
 }

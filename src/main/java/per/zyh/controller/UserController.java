@@ -1,5 +1,6 @@
 package per.zyh.controller;
 
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UnknownAccountException;
@@ -33,19 +34,20 @@ public class UserController {
 
     @PostMapping("/login")
     @ResponseBody
-    public R login(User user,String checkBox, HttpSession session) throws Exception {
-
+    public R login(User user,String checkBox) throws Exception {
         // 调用令牌进行登录：
         UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getPassword());
 
-            if (checkBox != null) {
-                token.setRememberMe(true);
-            }
-            Subject subject = SecurityUtils.getSubject();
-            subject.login(token);
+        if (checkBox != null) {
+            token.setRememberMe(true);
+        }
 
-            R r = R.ok("登录成功");   // {"code":0,"msg":"登录成功"}
-            return r;
+        Subject subject = SecurityUtils.getSubject();
+        subject.login(token);
+
+        R r = R.ok("登录成功");   // {"code":0,"msg":"登录成功"}
+        return r;
+
     }
 
     @GetMapping("/regist")

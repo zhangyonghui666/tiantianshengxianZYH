@@ -46,7 +46,7 @@
 	var username_error = true;
 	var password_error = true;
 	var code_error = true;
-
+	var emailformat=new RegExp("^\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$");
 	// 验证码刷新：
 	$("#cap").click(function () {
 		path = $(this).attr("src") +"?"+ new Date().getTime();
@@ -64,7 +64,6 @@
 			}else{
 				username_error = false;
 			}
-
 		});
 		$("#passwordID").blur(function () {
 			var password = $("#passwordID").val();
@@ -97,9 +96,11 @@
 
 
 
+
+
+
 	// 登录判断：
 	$("#loginID").click(function () {
-
 
 		if (code_error == false) {
 			if (username_error == false && password_error == false) {

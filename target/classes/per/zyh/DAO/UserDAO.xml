@@ -13,4 +13,7 @@
     <select id="queryUserByName" resultType="per.zyh.pojo.User">
         select * from t_user where username=#{username}
     </select>
+    <select id="queryUserByEmail" resultType="per.zyh.pojo.User">
+        select * from t_user where email=#{email}
+    </select>
 </mapper>

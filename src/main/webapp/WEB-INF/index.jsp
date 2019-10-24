@@ -12,36 +12,15 @@
 </head>
 <body>
 	<div class="header_con">
-		<div class="header">
-
-			<div class="welcome fl">
-				<shiro:user>
-					<shiro:principal></shiro:principal>
-				</shiro:user>
-				欢迎来到天天生鲜!</div>
-			<div class="fr">
-				<div class="login_info fl">
-					欢迎您：<em>张 山</em>
-				</div>
-				<div class="login_btn fl">
-					<a href="${pageContext.request.contextPath}/user/login">登录</a>
-					<span>|</span>
-					<a href="${pageContext.request.contextPath}/user/regist">注册</a>
-				</div>
-				<div class="user_link fl">
-					<span>|</span>
-					<a href="${pageContext.request.contextPath}/user/userCenter">用户中心</a>
-					<span>|</span>
-					<a href="${pageContext.request.contextPath}/user/myCart">我的购物车</a>
-					<span>|</span>
-					<a href="${pageContext.request.contextPath}/user/myOrder">我的订单</a>
-				</div>
-			</div>
-		</div>		
+        <!--扣头-->
+		<div id="head" class="header"></div>
+        <script type="text/javascript">
+            $("#head").load("${pageContext.request.contextPath}/goodsController/toHead")
+        </script>
 	</div>
 
 	<div class="search_bar clearfix">
-		<a href="index.jsp" class="logo fl"><img src="${pageContext.request.contextPath}/images/logo.png"></a>
+		<a href="${pageContext.request.contextPath}/user/index" class="logo fl"><img src="${pageContext.request.contextPath}/images/logo.png"></a>
 		<div class="search_con fl">
 			<input type="text" class="input_text fl" name="" placeholder="搜索商品">
 			<input type="button" class="input_btn fr" name="" value="搜索">
@@ -56,11 +35,11 @@
 		<div class="navbar">
 			<h1 class="fl">全部商品分类</h1>
 			<ul class="navlist fl">
-				<li><a href="">首页</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/index">首页</a></li>
 				<li class="interval">|</li>
-				<li><a href="">手机生鲜</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/index">手机生鲜</a></li>
 				<li class="interval">|</li>
-				<li><a href="">抽奖</a></li>
+				<li><a href="${pageContext.request.contextPath}/user/index">抽奖</a></li>
 			</ul>
 		</div>
 	</div>
@@ -84,8 +63,8 @@
 			<ul class="points"></ul>
 		</div>
 		<div class="adv fl">
-			<a href="#"><img src="${pageContext.request.contextPath}/images/adv01.jpg"></a>
-			<a href="#"><img src="${pageContext.request.contextPath}/images/adv02.jpg"></a>
+			<a href="${pageContext.request.contextPath}/user/index"><img src="${pageContext.request.contextPath}/images/adv01.jpg"></a>
+			<a href="${pageContext.request.contextPath}/user/index"><img src="${pageContext.request.contextPath}/images/adv02.jpg"></a>
 		</div>
 	</div>
 
@@ -106,19 +85,13 @@
 	</script>
 
 
-	<div class="footer">
-		<div class="foot_link">
-			<a href="#">关于我们</a>
-			<span>|</span>
-			<a href="#">联系我们</a>
-			<span>|</span>
-			<a href="#">招聘人才</a>
-			<span>|</span>
-			<a href="#">友情链接</a>		
-		</div>
-		<p>CopyRight © 2016 北京天天生鲜信息技术有限公司 All Rights Reserved</p>
-		<p>电话：010-****888    京ICP备*******8号</p>
-	</div>
+
+		<div id="foot" class="footer"></div>
+		<!--抠脚：-->
+		<script type="text/javascript">
+			$("#foot").load("${pageContext.request.contextPath}/goodsController/toFoot");
+		</script>
+
 	<script type="text/javascript" src="js/slideshow.js"></script>
 	<script type="text/javascript">
 		BCSlideshow('focuspic');
@@ -133,7 +106,7 @@
 		}
 
 		oFruit.onclick = function(){
-			window.location.href = 'list.jsp';
+			window.location.href = 'List.jsp';
 		}
 	</script>
 </body>

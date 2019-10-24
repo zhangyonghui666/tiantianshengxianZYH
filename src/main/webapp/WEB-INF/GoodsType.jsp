@@ -17,7 +17,7 @@
 
 <ul id="GoodsType" class="subnav fl">
 <c:forEach items="${goodsTypes}" var="goods" >
-    <li><a href="#model01" class="${goods.className}">${goods.title}</a></li>
+    <li><a href="${pageContext.request.contextPath}/goodsController/toList?typeId=${goods.id}" class="${goods.className}">${goods.title}</a></li>
 </c:forEach>
 </ul>
 

@@ -10,4 +10,6 @@ public interface UserService {
     Integer insertUser(User user);
 
     User queryUserByName(@Param("username") String username);
+
+    User queryUserByEmail(String email);
 }

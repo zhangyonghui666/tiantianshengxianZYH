@@ -51,13 +51,14 @@ public class MyRealm extends AuthorizingRealm {
     protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
         // 获取用户名：
         String  principal = (String) token.getPrincipal();
+
         // 根据组件查询数据库：
         User user = userService.queryUserByName(principal);
-        if (user != null) {  // 说明存在该用户
+        if (user != null) {  // 通过查询用户名说明存在该用户
             // 封装：
             SimpleAuthenticationInfo simpleAuthenticationInfo = new SimpleAuthenticationInfo(user.getUsername(), user.getPassword(), ByteSource.Util.bytes(user.getSalt()), this.getName());
             return simpleAuthenticationInfo;
-        } else {
+        }  else {
             return null;
         }
     }

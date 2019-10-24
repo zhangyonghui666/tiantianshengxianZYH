@@ -20,21 +20,21 @@
         <div class="subtitle fl">
             <span>|</span>
 <c:forEach var="goods" items="${goods}">
-            <a href="#">${goods.title}</a>
+            <a href="${pageContext.request.contextPath}/goodsController/toList?typeId=${typeId}">${goods.title}</a>
 </c:forEach>
         </div>
-        <a href="list.jsp" class="goods_more fr" id="fruit_more">查看更多 ></a>
+        <a href="${pageContext.request.contextPath}/goodsController/toList?typeId=${typeId}" class="goods_more fr" id="fruit_more">查看更多 ></a>
     </div>
 
     <div class="goods_con clearfix">
 
         <div class="goods_banner fl"><img src="${pageContext.request.contextPath}/${goodsBannerImg}"></div>
         <ul class="goods_list fl">
-            <c:forEach var="goods" items="${goods}">
+            <c:forEach var="goods" items="${allGoods}" end="3">
 
             <li>
-                <h4><a href="#">${goods.title}</a></h4>
-                <a href="detail.jsp"><img src="${pageContext.request.contextPath}/${goods.imgPath}"></a>
+                <h4><a href="${pageContext.request.contextPath}/goodsController/toDetail?goodsId=${goods.id}&typeId=${typeId}">${goods.title}</a></h4>
+                <a href="${pageContext.request.contextPath}/goodsController/toDetail?goodsId=${goods.id}&typeId=${typeId}"><img src="${pageContext.request.contextPath}/${goods.imgPath}"></a>
                 <div class="prize">¥ ${goods.price}</div>
             </li>
 
