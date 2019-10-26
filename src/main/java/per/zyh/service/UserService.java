@@ -12,4 +12,6 @@ public interface UserService {
     User queryUserByName(@Param("username") String username);
 
     User queryUserByEmail(String email);
+
+    Integer queryIdByUsername(@Param("username") String username);
 }

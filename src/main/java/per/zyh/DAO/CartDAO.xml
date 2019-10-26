@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- xxxDao.xml  -->
+<mapper namespace="per.zyh.DAO.CartDAO">
+
+    <insert id="insertGoods">
+        insert into t_cart(userId,goodsId,goodsNum) values(#{userId},#{goodsId},#{goodsNum})
+    </insert>
+    <update id="updateGoodsNumByGoodsId">
+        UPDATE t_cart SET goodsNum=#{goodsNum} WHERE goodsId=#{goodsId} and userId=#{userId}
+    </update>
+    <delete id="deleteGoods">
+        DELETE FROM t_cart WHERE goodsId=#{goodsId} AND userId=#{userId}
+    </delete>
+    <select id="queryCartIdByGoodsId" resultType="java.lang.Integer">
+        select id from t_cart where goodsId=#{goodsId} and userId=#{userId}
+    </select>
+    <select id="queryAllGoodsIdByUserId" resultType="java.lang.Integer">
+        SELECT goodsId FROM t_cart WHERE userId=#{userId}
+    </select>
+    <select id="queryGoodsNumByGoodsId" resultType="java.lang.Integer">
+        select goodsNum from t_cart where goodsId=#{goodsId} and userId=#{userId}
+    </select>
+    <select id="queryAll" resultType="per.zyh.pojo.CartAndGoods">
+        select t_cart.*,t_goods.* from t_cart left join t_goods on t_cart.goodsId=t_goods.id where t_cart.userId=#{userId}
+    </select>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,4 +16,7 @@
     <select id="queryUserByEmail" resultType="per.zyh.pojo.User">
         select * from t_user where email=#{email}
     </select>
+    <select id="queryIdByUsername" resultType="java.lang.Integer">
+        select id from t_user where username=#{username}
+    </select>
 </mapper>

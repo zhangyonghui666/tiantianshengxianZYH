@@ -33,6 +33,15 @@
         <span>|</span>
         <a href="${pageContext.request.contextPath}/user/regist">注册</a>
     </div>
+    <script type="text/javascript">
+        $(function () {
+            var isUser=$("#isUser").text();
+            if (isUser != null && isUser!="") {
+                $("#loginAndRegist").hide();
+            }
+        });
+
+    </script>
     <div class="user_link fl">
         <span>|</span>
         <a href="${pageContext.request.contextPath}/user/userCenter">用户中心</a>
@@ -41,10 +50,5 @@
         <span>|</span>
         <a href="${pageContext.request.contextPath}/user/myOrder">我的订单</a>
     </div>
-    <script type="text/javascript">
-        var isUser=$("#isUser").val();
-        if (isUser != null && isUser !="") {
-            $("#loginAndRegist").hide();
-        }
-    </script>
+
 </div>

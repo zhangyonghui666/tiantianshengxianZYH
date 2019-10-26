@@ -58,7 +58,7 @@
     <bean class="per.zyh.resolver.MyExceptionResolver"></bean>
 
 
-    <!-- ========================= Shiro ===========================================================  -->
+    <!-- ========================= Shiro (有了这些配置才可以使用shiro的注解（@RequireAuthentication...等）)===========================================================  -->
     <!-- 组件1，该组件的作用是：调用工厂中 Initializable类型 的组件的init方法
                   （说白了，就是帮你完成（Initializable这种类型的）组件的初始化）（不必过多关注）  -->
     <bean id="lifecycleBeanPostProcessor"

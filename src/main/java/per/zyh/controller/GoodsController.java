@@ -3,6 +3,7 @@ package per.zyh.controller;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.ibatis.javassist.runtime.Desc;
+import org.apache.shiro.authc.AuthenticationToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,8 +12,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import per.zyh.pojo.Goods;
 import per.zyh.pojo.GoodsType;
+import per.zyh.pojo.User;
+import per.zyh.service.CartService;
 import per.zyh.service.GoodsService;
 import per.zyh.service.GoodsTypeService;
+import per.zyh.service.UserService;
 
 import java.util.List;
 
@@ -26,6 +30,12 @@ public class GoodsController {
     private GoodsTypeService goodsTypeService;
     @Autowired
     private GoodsService goodsService;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
+    private CartService cartService;
 
     @GetMapping("/GoodsType")
     public String queryAllGoodsType(Model model) {
@@ -126,6 +136,7 @@ public class GoodsController {
         Goods SingleGoods = goodsService.queryGoodsById(goodsId);
         String goodsTypeTitle = goodsTypeService.queryGoodsTitleByTypeId(typeId);
 
+        model.addAttribute("goodsId", goodsId);
         model.addAttribute("Singlegoods", SingleGoods);
         model.addAttribute("goodsTypeTitle", goodsTypeTitle);
 

@@ -12,4 +12,6 @@ public interface UserDAO {
     User queryUserByName(@Param("username") String username);
 
     User queryUserByEmail(@Param("email") String email);
+
+    Integer queryIdByUsername(@Param("username") String username);
 }

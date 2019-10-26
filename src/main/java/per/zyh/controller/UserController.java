@@ -8,6 +8,7 @@ import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import per.zyh.pojo.Status;
 import per.zyh.pojo.User;
@@ -34,18 +35,26 @@ public class UserController {
 
     @PostMapping("/login")
     @ResponseBody
-    public R login(User user,String checkBox) throws Exception {
+    public R login(User user, String checkBox,HttpSession session) throws Exception {
+
         // 调用令牌进行登录：
         UsernamePasswordToken token = new UsernamePasswordToken(user.getUsername(), user.getPassword());
 
+        System.out.println(checkBox+"是否勾选记住我！！！！！！！！！！！！！！！！");
         if (checkBox != null) {
             token.setRememberMe(true);
+        }else {
+            token.setRememberMe(false);
         }
 
         Subject subject = SecurityUtils.getSubject();
         subject.login(token);
 
         R r = R.ok("登录成功");   // {"code":0,"msg":"登录成功"}
+
+
+        session.setAttribute("user", user);
+
         return r;
 
     }

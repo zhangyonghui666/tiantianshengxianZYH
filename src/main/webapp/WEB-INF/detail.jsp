@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/js/slide.js"></script>
-
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.12.2.js"></script>
 </head>
 <body>
 	<div class="header_con">
@@ -27,8 +27,8 @@
 			<input type="button" class="input_btn fr" name="" value="搜索">
 		</div>
 		<div class="guest_cart fr">
-			<a href="${pageContext.request.contextPath}/user/myCart" class="cart_name fl">我的购物车</a>
-			<div class="goods_count fl" id="show_count">1</div>
+			<a href="${pageContext.request.contextPath}/cart/toCart" class="cart_name fl">我的购物车</a>
+			<div class="goods_count fl" id="show_count">0</div>
 		</div>
 	</div>
 
@@ -145,8 +145,49 @@
 			</script>
 			<div class="operate_btn">
 				<a href="javascript:;" class="buy_btn">立即购买</a>
-				<a href="javascript:;" class="add_cart" id="add_cart">加入购物车</a>				
+				<a href="#" class="add_cart" id="add_cart">加入购物车</a>				
 			</div>
+			<div class="add_jump"></div>
+			<script type="text/javascript">
+
+				$("#add_cart").click(function () {
+
+					var $add_x = $('#add_cart').offset().top;
+					var $add_y = $('#add_cart').offset().left;
+
+					var $to_x = $('#show_count').offset().top;
+					var $to_y = $('#show_count').offset().left;
+
+					$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'});
+					// alert("!!!!!!!!!!!!!!!!!!!!!!");
+					var show_count=Number($("#show_count").text());
+					show_count = show_count + 1;
+
+					$(".add_jump").stop().animate({
+								'left': $to_y+7,
+								'top': $to_x+7},
+							"fast", function() {
+								$(".add_jump").fadeOut('fast',function(){
+									$('#show_count').html();
+								});
+							});
+
+					$("#show_count").text(show_count);
+					$.ajax({
+						url: "${pageContext.request.contextPath}/cart/insertGoods",
+						type:"post",
+						async: true,
+						data:{"goodsId":"${goodsId}","goodsNum":"1"},
+						complete:function (ret) {
+							if (ret.status=="firstok"){
+								alert("第一次添加成功");
+							}else {
+								alert("添加购物车成功");
+							}
+						}
+					});
+				});
+			</script>
 		</div>
 	</div>
 
@@ -193,29 +234,7 @@
 		$("#foot").load("${pageContext.request.contextPath}/goodsController/toFoot");
 	</script>
 
-	<div class="add_jump"></div>
 
-	<script type="text/javascript" src="js/jquery-1.12.2.js"></script>
-	<script type="text/javascript">
-		var $add_x = $('#add_cart').offset().top;
-		var $add_y = $('#add_cart').offset().left;
-
-		var $to_x = $('#show_count').offset().top;
-		var $to_y = $('#show_count').offset().left;
-
-		$(".add_jump").css({'left':$add_y+80,'top':$add_x+10,'display':'block'})
-		$('#add_cart').click(function(){
-			$(".add_jump").stop().animate({
-				'left': $to_y+7,
-				'top': $to_x+7},
-				"fast", function() {
-					$(".add_jump").fadeOut('fast',function(){
-						$('#show_count').html(2);
-					});
-
-			});
-		})
-	</script>
 	
 </body>
 </html>
