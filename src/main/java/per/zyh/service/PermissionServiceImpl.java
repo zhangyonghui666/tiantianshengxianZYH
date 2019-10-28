@@ -9,6 +9,7 @@ import per.zyh.DAO.PermissionDAO;
 import java.util.Set;
 
 @Service
+@Transactional
 public class PermissionServiceImpl implements PermissionService{
 
     @Autowired

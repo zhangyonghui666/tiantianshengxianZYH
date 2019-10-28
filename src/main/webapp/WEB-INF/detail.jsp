@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="shiro" uri="http://shiro.apache.org/tags" %>
+>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -145,7 +147,13 @@
 			</script>
 			<div class="operate_btn">
 				<a href="javascript:;" class="buy_btn">立即购买</a>
-				<a href="#" class="add_cart" id="add_cart">加入购物车</a>				
+				<shiro:authenticated>   <!--登录了就直接加入购物车-->
+				<a href="#" class="add_cart" id="add_cart">加入购物车</a>
+				</shiro:authenticated>
+				<shiro:notAuthenticated>   <!--未登录就跳转到登陆页面-->
+					<a href="${pageContext.request.contextPath}/user/login" class="add_cart">加入购物车</a>
+				</shiro:notAuthenticated>
+
 			</div>
 			<div class="add_jump"></div>
 			<script type="text/javascript">
@@ -178,11 +186,12 @@
 						type:"post",
 						async: true,
 						data:{"goodsId":"${goodsId}","goodsNum":"1"},
-						complete:function (ret) {
-							if (ret.status=="firstok"){
-								alert("第一次添加成功");
+						success:function (ret) {
+							alert(ret.status);
+							if (ret.status == "addok"){
+								alert("购物车数量增加成功");
 							}else {
-								alert("添加购物车成功");
+								alert("第一次添加成功");
 							}
 						}
 					});

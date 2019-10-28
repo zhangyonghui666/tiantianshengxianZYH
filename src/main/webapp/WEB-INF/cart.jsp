@@ -221,12 +221,14 @@
 			var isDelete = confirm("您确定要删除该商品嘛？");
 			if (isDelete) {
 				$.ajax({
-					url:"${pageContext.request.contextPath}/cart/delete?goodsId="+goodsId+"",
+					url:"${pageContext.request.contextPath}/cart/delete/"+goodsId+"",
 					async:true,
 					type:"delete",
 					success:function (ret) {
 						if (ret.status == "deleteok") {
 							alert(" 删除成功");
+						}else{
+							alert("删除失败");
 						}
 					}
 				});

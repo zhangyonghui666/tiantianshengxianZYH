@@ -5,7 +5,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!-- xxxDao.xml  -->
 <mapper namespace="per.zyh.DAO.GoodsDAO">
-
+<!--    <cache type="per.zyh.cache.MyCache"></cache>-->
 
 <!-- 按照创建时间，查询前4条数据（注意limit的用法和order by 的顺序） -->
     <select id="queryAllGoodsByTypeId" resultType="per.zyh.pojo.Goods">

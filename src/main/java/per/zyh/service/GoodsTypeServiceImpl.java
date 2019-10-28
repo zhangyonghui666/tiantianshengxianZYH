@@ -31,6 +31,7 @@ public class GoodsTypeServiceImpl implements GoodsTypeService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public String queryGoodsTitleByTypeId(Integer typeId) {
         return goodsDAO.queryGoodsTitleByTypeId(typeId);
     }

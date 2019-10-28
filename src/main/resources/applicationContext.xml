@@ -132,7 +132,7 @@
 
     <!-- ==================== 七：导入 外部配置文件  ===============================================  -->
     <!--  导入外部的shiro配置文件(该配置文件也是属于Spring配置文件的一种)  -->
-    <!--    <import resource="classpath:shiro_applicationContext.xml"/>-->
+        <import resource="classpath:applicationContext_shiro.xml"/>
 <!--
     &lt;!&ndash; 导入reids相关的配置文件 &ndash;&gt;
     <import resource="classpath:application_redis.xml"/>

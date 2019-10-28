@@ -16,6 +16,7 @@ import java.util.Set;
  * **************************************************************************
  */
 @Service  // 记得xxxService上边到打上@Service注解！
+@Transactional
 public class RoleServiceImpl implements RoleService {
 
     @Resource

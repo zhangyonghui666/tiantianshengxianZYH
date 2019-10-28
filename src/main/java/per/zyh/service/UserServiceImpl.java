@@ -48,11 +48,13 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public User queryUserByEmail(String email) {
         return userDAO.queryUserByEmail(email);
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public Integer queryIdByUsername(String username) {
         return userDAO.queryIdByUsername(username);
     }

@@ -47,24 +47,29 @@ public class CartController {
     // 将商品加入到购物车中：   用Ajax异步；
     @PostMapping("/insertGoods")
     @RequiresAuthentication
+    @ResponseBody
     public Status insertGoods(Integer goodsId, Integer goodsNum, HttpSession session) {
-        Status firstok = new Status("firstok");
-        Status addok = new Status("addok");
+
         User user = (User) session.getAttribute("user");
         Integer userId = userService.queryIdByUsername(user.getUsername());
 
-//        System.out.println("userId~~~~"+userId + "goodsId~~~~" + goodsId + "goodsNum~~~~" + goodsNum);
+
+        System.out.println("userId~~~~"+userId + "goodsId~~~~" + goodsId + "goodsNum~~~~" + goodsNum);
 
         // 根据商品的id和用户的id查询数据库中是否有这个商品：
         Integer cartId = cartService.queryCartIdByGoodsId(goodsId,userId);
+
+        Status status = new Status("addok");
+
         if (cartId != null) {   // 如果购物车中已经存在该商品了，则只让商品数量+1即可
+
             Integer goodsNum2 = cartService.queryGoodsNumByGoodsId(goodsId,userId);
             goodsNum2 += 1;
              cartService.updateGoodsNumByGoodsId(goodsId, goodsNum2,userId);
-            return addok;
+            return status;
         }else {  // 如果商品并不在购物车中：则新增：
             Integer integer = cartService.insertGoods(userId, goodsId,goodsNum);
-            return firstok;
+            return null;
         }
     }
 
@@ -90,6 +95,8 @@ public class CartController {
     // 用户直接删除购物车的某个商品  参数： goodsId userId
     @DeleteMapping("/delete/{goodsId}")
     public Status deleteGoods(@PathVariable Integer goodsId,HttpSession session) {
+        System.out.println("这里是删除handler））））））））））））））））））" );
+
         User user = (User) session.getAttribute("user");
         Integer userId = userService.queryIdByUsername(user.getUsername());
 
@@ -98,6 +105,7 @@ public class CartController {
         cartService.deleteGoods(goodsId, userId);
 
         Status status = new Status("deleteok");
+
         return status;
     }
 }

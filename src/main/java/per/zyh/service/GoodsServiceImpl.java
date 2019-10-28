@@ -2,6 +2,7 @@ package per.zyh.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import per.zyh.DAO.GoodsDAO;
 import per.zyh.DAO.GoodsTypeDAO;
@@ -23,18 +24,21 @@ public class GoodsServiceImpl implements GoodsService {
     private GoodsTypeDAO goodsTypeDAO;
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public List<Goods> queryAllGoodsByTypeId(Integer typeId) {
 
         return goodsDAO.queryAllGoodsByTypeId(typeId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public String queryGoodsBannerImgByTypeId(Integer typeId) {
 
         return goodsTypeDAO.queryGoodsBannerImgByTypeId(typeId);
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public Goods queryGoodsById(Integer id) {
         Goods singleGood=goodsDAO.queryGoodsById(id);
         return singleGood;

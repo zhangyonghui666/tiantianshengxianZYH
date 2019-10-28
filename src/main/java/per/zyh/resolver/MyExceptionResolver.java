@@ -29,6 +29,7 @@ public class MyExceptionResolver implements HandlerExceptionResolver{
         ModelAndView mv = new ModelAndView();
         // 开发时必备的
         ex.printStackTrace();
+        System.out.println(ex.getClass());
         String view = evMapping.get(ex.getClass());
         if(view == null){
             view = DEFAULT_ERROR;
