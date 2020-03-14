@@ -8,7 +8,8 @@
 
 
     <insert id="insertUser">
-        insert into t_user(username,password,salt,email,createtime) values (#{username},#{password},#{salt},#{email},#{createTime})
+        insert into t_user(username,password,salt,email,createtime)
+        values (#{username},#{password},#{salt},#{email},#{createTime})
     </insert>
     <select id="queryUserByName" resultType="per.zyh.pojo.User">
         select * from t_user where username=#{username}
